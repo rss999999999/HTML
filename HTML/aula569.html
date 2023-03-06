@@ -1,0 +1,100 @@
+<!-- 
+    
+#Existem tags que não tem corpo!!!!! mas a grande maioria da tags tem corpo 
+
+<tenhocorpo>
+    <tenhocorpotmb>
+        <naotenhocorpo atributo="valor1 valor2">
+    </tenhocorpotmb>
+</tenhocorpo>
+
+#html não é case sensitive!!!:  <!DOCTYPE html> =  <!doctype html>
+
+#Site que analise os erros no código do HTML:
+https://validator.w3.org/#validate_by_input
+
+#Com o VS code posso usar a ! para criar a estrutura automaticamente
+-->
+
+<!DOCTYPE html> <!--especifico para o navegador que estamos criando um arquivo html5 -->
+<html lang="pt-BR"> <!-- Todas as tags são filhas dessa tag -->
+
+<head>
+    <meta charset="UTF-8"> <!-- METADADOS PARA ACENTUAÇÃO, ESSA TAG N TEM CORPO, UTF-8: codificação de
+                        caractere do unicode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Isso aqui foi introduzido pela Apple no Safari (para dispositivos móveis)-->
+    <title>2: atributos de id e class</title> <!-- NOME DA GUIA (OBRIGATÓRIO) -->
+
+    <!-- Style usa o CSS-->
+    <!--começando com h1 estou selecionando diretamente uma tag-->
+    <!--começando com # estou selecionando diretamente um elemento específico-->
+    <!--começando com .class estou selecionando diretamente todos elementos da classe. ex.:.fundo vermelho-->
+    <!--comentário em CSS é: /*   */  -->
+
+    <style> /*Style usa o CSS*/
+    
+        /*começando com h1 estou selecionando diretamente uma tag*/
+        h1 {
+            background: red;
+        }
+
+        h1 {
+            background: rgb(111, 0, 255);
+        }
+
+        p {
+            background: rgb(150, 194, 161);
+        }
+        /*começando com # estou selecionando diretamente um elemento específico*/
+        #cabecalho-dois{
+            background:purple;
+        }
+        
+        /*
+        começando com .class estou selecionando diretamente todos elementos da classe. ex.:.fundo vermelho 
+        é recomendável editar primeiro os estilos nas classes, 
+        editar o id somente em último caso!!!!
+        
+        LEMBRANDO NOVAMENTE:
+        id: pode existir somente um único id!!!
+        class: pode existir várias classes!!!!
+        */
+        .fundo-vermelho{
+            background: red;
+        }
+        .negriiiiiiiiitu{
+            background: pink;
+        }
+    </style>
+
+</head>
+
+<body> <!-- Tudo que vemos na página do navegador -->
+    <h1 id="cabecalho-um" class="fundo-amarelo borda esquerda"> <!--os identificadores(id) devem ser únicos!!!!-->
+        Aqui vai o título!
+    </h1> <!-- Vai até o h6 - por ordem de importância (títulos) -->
+    <h2 id="cabecalho-dois" class="fundo-azul">
+        <!--class: posso repetir a classe, é importante para o css e javascript-->
+        Aqui vai ouuuutro título do Corinthians!
+    </h2>
+    <h3 id="cabecalho-tres" class="fundo-vermelho">
+        <!--class: posso repetir a classe, é importante para o css e javascript-->
+        Aqui vai ouuuutro título do Corinthians!
+    </h3>
+    <p>
+        Aqui é o meu parágrafo, <strong>aqui</strong>, Aqui é o meu <strong>aqui</strong> parágrafo, Aqui <strong>aqui</strong> é o meu parágrafo, qui é o meu parágrafo,
+        <em>Aqui é o meu parágrafo, Aqui é o meu parágrafo, Aqui é o meu parágrafo, Aqui é o meu parágrafo</em>
+        <strong>Aqui é o meu parágrafo, Aqui é o meu parágrafo, Aqui é o meu parágrafo, Aqui é o meu parágrafo</strong>
+
+    </p>
+    <span>
+        Aqui é o meu <b class="negriiiiiiiiitu">negrito</b> usando o bold
+    </span>
+
+
+</body>
+
+
+</html> <!-- Todas as tags são filhas dessa tag -->

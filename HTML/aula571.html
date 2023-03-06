@@ -1,0 +1,215 @@
+<!-- 
+  
+<b></b>: negrito, é físico!
+<strong></strong>: negrito para dar ênfase na palavras: <strong>CUIDADE</strong>vc poderá cair!!!!! é lógico!
+<i>itálico</i> é físico!
+<em>itálico para ênfase</em>: : eu <em>amoooooooooo</em> comer sanduíche! é lógico!
+<br>quebrar linha: não tem corpo! (ou seja, não se deve fechar com </br>)
+<hr> faz uma linha: não tem corpo!
+<del>riscar a palavra</del>
+<ins>inserir uma palavra correta no lugar da palavra riscada pelo del</ins> tag lógica
+<sup>elevar ao quadrado</sup>
+<sup>H2O, rebaixar o 2</sup>
+<u>underline</u>
+<small>deixa a palavra pequena</small>
+<q cite="site externo">citação</q>
+<blockquote cite="site externo">Fulano de tal citou isso!</blockquote>
+<code>fonte monoespaçada que é ultilizada para código</code>
+
+#Aqui está a lista de todas as tags do HTML (HTML elements):
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+
+#Aqui está o link para validar o código do HTML5
+https://validator.w3.org/#validate_by_input
+
+
+
+
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script>document.getElementsByTagName("html")[0].className += " js";</script><script>
+    if('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
+      document.write('<link rel="stylesheet" href="2020/assets/css/style.css">');
+    } else {
+      document.write('<link rel="stylesheet" href="2020/assets/css/style-fallback.css">');
+    }
+  </script><noscript>
+    <link rel="stylesheet" href="assets/css/style-fallback.css">
+  </noscript>
+	<title>Jamie Wright in 2020</title>
+</head>
+<body>
+<div>
+<article class="header">
+<div class="header__mark">
+<h2>JW</h2>
+</div>
+
+<div class="header__name">
+<h1>Jamie Wright</h1>
+
+<p>Head of Delivery @ Strawberry.co.uk</p>
+</div>
+
+<div class="header__intro">
+<p>15 years of in agency experience. Wireframes, Design, Frontend, User Experience &amp; Project Management<br />
+<br />
+Newcastle born, Yorkshire bred</p>
+</div>
+
+<div class="header__quicklinks">
+<p><a href="mailto:hello@iamjamie.co.uk">Open to Opportunities</a></p>
+</div>
+<picture class="header__image"> <source media="(min-width: 800px)" srcset="jamie.jpg" /> <img src="jamie.jpg" /> </picture></article>
+</div>
+<script src="assets/js/scripts.js"></script></body>
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>3: Tags mais utilizadas</title>
+
+    <style>
+        .imagem-do-messi-width {
+            width: 600px;
+        }
+        .imagem-do-messi-height {
+            height: 500px;
+        }
+        .formatar-span{
+            color: blue;
+        }
+    </style>
+
+</head>
+
+
+<!-- OU uso style dentro do h1 (BODY) OU crio (style - HEAD) e faço o paranauê do CSS -->
+
+<style>
+    h2 {
+        background: red;
+    }
+</style>
+
+<body>
+    <h1 style="background: red"> <!--o style funciona apenas para o que está no corpo-->
+        Aqui vai o título!
+    </h1>
+
+    <h1> <!--aqui não fica vermelhor!!-->
+        Aqui vai o título!
+    </h1>
+    <P>Lorem <b>Rodrigo</b> ipsum <strong>Soares</strong> dolor sit <i>dolor</i> amet consectetur <em>adipisicing</em>
+        elit.
+        Laboriosam quia commodi omnis aperiam numquam illum non, delectus reprehenderit iusto?
+        Quidem harum nam illo ipsam aspernatur magnam repudiandae accusamus itaque velit.</P>
+
+    <h2> <!--aqui não fica vermelhor!!-->
+        Aqui vai o título!
+    </h2>
+
+    <!-- target='_blank' é usado para abrir o link (href) em outra guia-->
+    <!--<a>link texto ou imagem </a>-->
+
+    <P>Lorem ipsum dolor sit, <a href="https://www.corinthians.com.br/" target='_blank'>Corinthians</a> amet consectetur
+        adipisicing elit. Laboriosam, corporis. Labore harum perferendis reiciendis voluptatibus dolor tempore dicta dolorum quae excepturi rem
+        minus fugiat, iste ullam, amet exercitationem ad accusamus.</P>
+
+    <!-- img src= "link da imagem"-->
+    <!--alt="uso aqui para descrever a minha imagem"-->
+    <!--width="50" : altero a largura-->
+    <!--height="100" : altero o cumprimento-->
+
+    <p>
+        <img src="https://static.corinthians.com.br/uploads/fmBzATYJ/1677512626ddad6ac1ed8c74787cb80c8685b863dd.jpg"
+            alt="Treinamento do timão entre o time titular e o time reserva" width="700">
+        <img src="https://identidadecorinthiana.com/wp-content/uploads/2020/08/messi-cor-1.png"
+            alt="O homi entrou em contato com o Messi!">
+
+
+        <!--nessa terceira imagem tem um link: a href ="" -->
+        <!--nessa terceira imagem tem uma quebra de linha : <br> -->
+        <!--nessa terceira imagem tem um link na frase:"irei contratar o Messi! e tmb tem um link na foto do Duílio"-->
+        <a href="http://identidadecorinthiana.com/messi-no-corinthians/" target='_blank'><br><br><br><br><br><br><em>Irei contratar
+                o Messi!</em> <br><br><img
+                src="https://th.bing.com/th?id=ORMS.fc8e830202505ffe7f238966d4a11975&pid=Wdp&w=612&h=304&qlt=90&c=1&rs=1&dpr=1&p=0"
+                alt="O homi entrou em contato com o Messi!"></a>
+                <br><br><br>
+
+<!--nessa quarta e quinta imagem tem as classes para manipular o width e height no style (está entre o TITLE e o HEAD) -->
+        <img class="imagem-do-messi-width" src="https://identidadecorinthiana.com/wp-content/uploads/2020/08/messi-cor-1.png"
+            alt="O homi entrou em contato com o Messi!">
+            <br>
+            <br>
+            <br>
+        <img class="imagem-do-messi-height" src="https://identidadecorinthiana.com/wp-content/uploads/2020/08/messi-cor-1.png"
+            alt="O homi entrou em contato com o Messi!">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        Lorem <del>ipsum dolor</del> <ins>sit amet</ins> consectetur, adipisicing<sup>2</sup> elit. H<sub>2</sub>O Ullam id 
+        explicabo placeat possimus totam ad delectus <u>cidunt</u> <small>inventore</small> repellendus. <br>
+        <q cite="https://ge.globo.com/futebol/futebol-internacional/noticia/messi-conquista-bola-de-ouro-pela-setima-vez-e-se-isola-ainda-mais-como-maior-vencedor.ghtml">
+            Meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeesi: Argentino amplia a vantagem em relação a Cristiano Ronaldo como maior ganhador da premiação da revista "France Football"</q>
+
+    </p>
+
+    <!--o blockquote não pode ficar dentro do parágrafo <p></p>-->
+    <blockquote cite="https://ge.globo.com/futebol/futebol-internacional/noticia/messi-conquista-bola-de-ouro-pela-setima-vez-e-se-isola-ainda-mais-como-maior-vencedor.ghtml">
+        <br>
+        <hr>  <!--linha que separa o texto-->
+        <br>
+        Os vencedores da história da Bola de Ouro: <br><br><br><small>
+        <b>1º</b>: Lionel Messi (2009, 2010, 2011, 2012, 2015, 2019 e 2021) : 7<br><br>
+        <b>2º</b>: Cristiano Ronaldo (2008, 2013, 2014, 2016 e 2017): 5<br><br>
+        <b>3º</b>: Johan Cruijff (1971, 1973 e 1974), Michel Platini (1983, 1984 e 1985) e Marco van Basten (1988, 1989 e 1992): 3<br><br>
+        <b>6º</b>: Alfredo Di Stéfano (1957 e 1959), Franz Beckenbauer (1972 e 1976), Kevin Keegan (1978 e 1979), Karl-Heinz Rummenigge (1980 e 1981) e Ronaldo (1997 e 2002): 2<br><br></small>
+    </blockquote>
+    
+    <br><br><hr><br><br>
+    <!--Span é um conteiner generico inline, posso usar class e usar a class em outros objetos-->
+    <!--Div é um conteiner generico que é block-->
+
+    <span class="formatar-span">Para isso,</span> o setor financeiro está resolvendo o seguinte problema:</span>
+    
+    <pre> <!--serve para identar o código-->
+        <code> <!--serve para formatar o texto do código-->
+            public class BubbleSort {
+                public static void main(String[] args) {
+                    int[] vetor = {19, 25, 23, 1}; // vetor desordenado
+                    bubbleSort(vetor); // chamada do método bubbleSort
+                    for (int i = 0; i < vetor.length; i++) {
+                        System.out.print(vetor[i] + " "); // imprime o vetor ordenado
+                    }
+                }
+            
+                public static void bubbleSort(int[] vetor) {
+                    int n = vetor.length; // tamanho do vetor
+                    for (int k = 0; k < n - 1; k++) { // percorre o vetor n - 1 vezes
+                        for (int i = 0; i < n - k - 1; i++) { // compara os elementos adjacentes
+                            if (vetor[i] > vetor[i + 1]) { // se o elemento da esquerda for maior que o da direita
+                                int aux = vetor[i]; // troca os elementos de posição
+                                vetor[i] = vetor[i + 1];
+                                vetor[i + 1] = aux;
+                            }
+                        }
+                    }
+                }
+            }
+        </code>
+    </pre>
+
+</body>
+
+
+</html>
